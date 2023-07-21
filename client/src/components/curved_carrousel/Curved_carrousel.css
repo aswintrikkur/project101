@@ -1,0 +1,71 @@
+.carrousel-container {
+	width: 100vw;
+	height: 350px;
+	background-color: var(--mint-green);
+	display: grid;
+	grid-template-rows: 50px 300px;
+}
+.carrousel-container .image-container {
+	grid-row: 2/3;
+	width: 100vw;
+	height: 300px;
+
+	overflow: hidden;
+	/* border: 1px solid var(--jet); */
+	position: relative;
+}
+.image-container .images {
+	/* width: 100vw; */
+	/* height: 270px; */
+	display: flex;
+	/* gap: 65.58px; */
+	gap: 55px;
+	overflow-y: hidden;
+	overflow-x:scroll;
+}
+.carrousel-container .image-container .img {
+	width: 233.893px;
+	height: 304.71px;
+    /* flex-shrink: 0; */
+	/* scale: .96; */
+	translate: 0 -20px;
+}
+/*===============Extruder=======================*/
+.carrousel-container .image-container .extruder {
+	width: 1465px;
+	height: 100px;
+	background-color: var(--mint-green);
+	/* background-color: aqua; */
+	position: absolute;
+	left: -50px;
+    z-index: 2;
+}
+.image-container .extruder-top {
+	top: -40px;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+.image-container .extruder-bottom {
+	bottom: -40px;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+}
+/*===============Slide button=======================*/
+.fa-solid {
+	background-color: var(--powder-blue);
+	opacity: 80%;
+	z-index: 2;
+	position: absolute;
+	padding: 3px;
+	scale: 1.5;
+	top: 50%;
+}
+.fa-chevron-right {
+	right: 5px;
+}
+.fa-chevron-left {
+	left: 5px;
+}
+.fa-chevron-right:focus ~ .images{
+    translate: 20px 20px;
+}
