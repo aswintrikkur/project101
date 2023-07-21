@@ -1,4 +1,4 @@
-import { Curved_carrousel } from "../../components/curved_carrousel/curved_carrousel";
+import { Curved_carrousel } from "../../components/curved_carrousel/Curved_carrousel";
 import "./Home.css";
 
 import React from "react";

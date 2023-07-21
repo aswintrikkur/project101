@@ -1,4 +1,4 @@
-import "./curved_carrousel.css";
+import "./Curved_carrousel.css";
 import React from "react";
 
 export const Curved_carrousel = () => {

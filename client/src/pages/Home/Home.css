@@ -45,6 +45,7 @@ header .logo img {
 	place-self: center;
 	display: flex;
 	gap: 15px;
+	margin-right: 8px;
 	/* flex-wrap: wrap; */
 }
 
@@ -62,7 +63,7 @@ header .logo img {
 }
 
 /*================mobile version=============*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
 	header {
 		scale:1 1.2 ;
 		font-size: 12px;
@@ -75,7 +76,7 @@ header .logo img {
 	}
 	.home-container header .nav {
 		/* flex-wrap: wrap; */
-		flex-direction: column;
+		/* flex-direction: column; */
 	}
 
 	.home-container body {

@@ -70,11 +70,11 @@
 }
 
 /* ============mobile version===========*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
 
     .carrousel-container {
-        width: 100vw;
-        height: 250px;
+        /* width: 100vw; */
+        /* height: 250px; */
         /* background-color: var(--mint-green); */
     }
 
@@ -90,7 +90,10 @@
     
 
 	.carrousel-container .image-container .img {
-		/* width: 70px; */
+		width: 140px;
 		/* height: 100px; */
+	}
+	.carrousel-container .image-container .img img{
+		width: inherit;
 	}
 }
