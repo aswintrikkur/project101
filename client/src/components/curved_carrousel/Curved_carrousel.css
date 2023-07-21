@@ -18,27 +18,26 @@
 	/* width: 100vw; */
 	/* height: 270px; */
 	display: flex;
-	/* gap: 65.58px; */
 	gap: 55px;
 	overflow-y: hidden;
-	overflow-x:scroll;
+	overflow-x: scroll;
+	/* translate: -20px 0 ; */
 }
 .carrousel-container .image-container .img {
 	width: 233.893px;
 	height: 304.71px;
-    /* flex-shrink: 0; */
-	/* scale: .96; */
-	translate: 0 -20px;
+	/* flex-shrink: 0; */
 }
 /*===============Extruder=======================*/
 .carrousel-container .image-container .extruder {
-	width: 1465px;
-	height: 100px;
+	/* width: 1465px; */
+	width: 100vw;
+	height: 33%;
 	background-color: var(--mint-green);
 	/* background-color: aqua; */
 	position: absolute;
-	left: -50px;
-    z-index: 2;
+	/* left: -50px; */
+	z-index: 2;
 }
 .image-container .extruder-top {
 	top: -40px;
@@ -53,12 +52,15 @@
 /*===============Slide button=======================*/
 .fa-solid {
 	background-color: var(--powder-blue);
-	opacity: 80%;
+	opacity: 60%;
 	z-index: 2;
 	position: absolute;
 	padding: 3px;
 	scale: 1.5;
 	top: 50%;
+}
+.fa-solid:hover {
+	opacity: 90%;
 }
 .fa-chevron-right {
 	right: 5px;
@@ -66,6 +68,29 @@
 .fa-chevron-left {
 	left: 5px;
 }
-.fa-chevron-right:focus ~ .images{
-    translate: 20px 20px;
+
+/* ============mobile version===========*/
+@media screen and (max-width: 360px) {
+
+    .carrousel-container {
+        width: 100vw;
+        height: 250px;
+        /* background-color: var(--mint-green); */
+    }
+
+    .carrousel-container .image-container {
+    }
+
+    .image-container .images {
+        display: flex;
+        gap: 15px ;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    
+
+	.carrousel-container .image-container .img {
+		/* width: 70px; */
+		/* height: 100px; */
+	}
 }
